@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasil Finanças Atlas — novo endereço</title>
+<meta name="robots" content="noindex">
+<script>
+  // O GitHub Pages entrega este arquivo para qualquer caminho que nao existe
+  // aqui — ou seja, para todos os links antigos de unidade. Reaproveita o
+  // caminho para levar a pessoa exatamente a mesma pagina no endereco novo,
+  // em vez de jogar todo mundo na home.
+  (function () {
+    var destino = "https://brasil-financas-atlas.github.io/bfa/";
+    var base = "/bfa/";
+    var caminho = window.location.pathname;
+    var resto = caminho.indexOf(base) === 0 ? caminho.slice(base.length) : "";
+    window.location.replace(destino + resto + window.location.search + window.location.hash);
+  })();
+</script>
+<style>
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 32rem;
+    margin: 20vh auto;
+    padding: 0 1.5rem;
+    line-height: 1.6;
+    color: #011e50;
+  }
+  a { color: #ca9e43; font-weight: 700; }
+</style>
+</head>
+<body>
+  <h1>O site mudou de endereço</h1>
+  <p>
+    Esta página agora fica em
+    <a href="https://brasil-financas-atlas.github.io/bfa/">brasil-financas-atlas.github.io/bfa</a>.
+  </p>
+</body>
+</html>
